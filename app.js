@@ -50,7 +50,7 @@ app.route("/articles")
 
 })
 
-.put((req,res)=>{
+.delete((req,res)=>{
     Article.deleteMany({},(err)=>{
         if(err){
             console.log(err);
